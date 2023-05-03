@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/logo-white.ico">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="game-area">
+        <div class="game-options">
+            <select name="game_type" id="game_type" onchange="resetAIButton()">
+                <option value="3">3 x 3 Board</option>
+                <option value="4">4 x 4 Board</option>
+                <option value="5">5 x 5 Board</option>
+            </select>
+            <div class="computer">
+                <input type="checkbox" name="robot" checked="true" id="robot" class="box"> With Computer? <br />
+            </div>
+
+            <input type="submit" value="Start Game" onclick="generateGame()" class="submit-button">
+        </div>
+        <div id="game-board" class="game-board">
+            Please select your game setting, then press <span>'Start Game'</span>
+        </div>
+        <div class="score-card">
+            <div class="score">
+                Player X Score: <span id="score-X">0</span> <br>
+                Player O Score: <span id="score-O">0</span> <br>
+                Draw : <span id="score-D">0</span>
+            </div>
+            <input type="submit" value="Reset" onclick="resetScore()" class="reset-button">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

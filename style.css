@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px dashed #CFCFCF;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.head h1 {
+    font-size: 30px;
+}
+
+a {
+    outline: 0;
+}
+
+.computer {
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.submit-button {
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 280px;
+}
+
+.submit-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.game-area {
+    margin: 0;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-options {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-options select,
+.game-options input {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.game-area .game-options select {
+    font-family: "Press Start 2P";
+    font-size: 14px;
+}
+
+.game-area .game-options select option {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.game-area input.submit-button {
+    font-family: "Press Start 2P";
+}
+
+.game-board {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: normal;
+    width: 40vw;
+    padding: 0px 10px 0px 10px;
+}
+
+.game-board span {
+    font-size: 30px;
+}
+
+.grid-box,
+.x-player,
+.o-player {
+    font-size: 60px;
+    padding: 15px 25px;
+    min-width: 140px;
+    min-height: 140px;
+    margin: 0px;
+    background-color: #FCFCFC;
+    outline: none;
+    font-family: "Press Start 2P";
+}
+
+.x-player {
+    color: #fff;
+    background-color: rgb(221, 79, 79);
+}
+
+.o-player {
+    color: #333;
+    background-color: rgb(103, 224, 103);
+
+}
+
+.score-card {
+    width: 25%;
+    font-weight: normal;
+    line-height: 70px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.score-card span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.score-card input {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 280px;
+    font-family: "Press Start 2P";
+}
+
+.computer input.box {
+    width: 20px;
+    height: 20px;
+}
+
+.reset-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (min-width : 1024px) {
+    .game-area {
+        margin: 0;
+        height: 85vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .game-board {
+        font-size: 14px;
+        line-height: 35px;
+        font-weight: normal;
+        width: 50vw;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .score-card {
+        width: 25%;
+        font-weight: normal;
+        line-height: 50px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-box,
+    .x-player,
+    .o-player {
+        font-size: 20px;
+        padding: 15px 25px;
+        min-width: 80px;
+        min-height: 80px;
+        margin: 0px;
+        background-color: #FCFCFC;
+        outline: none;
+        font-family: "Press Start 2P";
+    }
+
+    .score-card span {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .x-player {
+        color: #fff;
+        background-color: rgb(221, 79, 79);
+    }
+
+    .o-player {
+        color: #333;
+        background-color: rgb(103, 224, 103);
+    }
+
+    .submit-button {
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 180px;
+        font-size: 16px;
+    }
+
+    .computer input.box {
+        width: 18px;
+    }
+
+    .computer {
+        margin: 10px 0px 20px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .score-card input {
+        border: 1px solid #333;
+        padding: 10px;
+        margin-right: 10px;
+        outline: none;
+        font-size: 18px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 180px;
+        font-family: "Press Start 2P";
+    }
+    .game-board span {
+        font-size: 20px;
+    }
+
+    .game-area input.submit-button {
+        font-size: 16px;
+        font-family: "Press Start 2P";
+    }
+}
+
