@@ -4,8 +4,6 @@
 
 https://csi-xo.web.app
 
-โปรเจกต์นี้อาจมีการปรับแต่งแก้ไข้เพิ่มเติม และปัจจุบันกำลังปรับในส่วนของ Responsive เพื่อให้สามารถลองรับได้ทุกอุปกรณ์
-
 Infographic :
 https://drive.google.com/file/d/1RMNBZZ6t81cz-U6kVFPzd7GHxYbsfo5l/view?usp=sharing
 

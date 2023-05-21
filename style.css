@@ -91,7 +91,7 @@ a {
     font-size: 16px;
     line-height: 40px;
     font-weight: normal;
-    width: 40vw;
+    width: 50%;
     padding: 0px 10px 0px 10px;
 }
 
@@ -102,13 +102,13 @@ a {
 .grid-box,
 .x-player,
 .o-player {
-    font-size: 60px;
+    font-size: 30px;
     padding: 15px 25px;
-    min-width: 140px;
-    min-height: 140px;
+    min-width: 80px;
+    min-height: 80px;
     margin: 0px;
-    background-color: #FCFCFC;
-    outline: none;
+    background-color: #8d8d8d;
+    outline: nones;
     font-family: "Press Start 2P";
 }
 
@@ -120,7 +120,6 @@ a {
 .o-player {
     color: #333;
     background-color: rgb(103, 224, 103);
-
 }
 
 .score-card {
@@ -132,7 +131,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .score-card span {
@@ -162,52 +160,33 @@ a {
     color: #fff;
 }
 
-@media (min-width : 1024px) {
-    .game-area {
-        margin: 0;
-        height: 85vh;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+@media only screen and (max-width: 1300px) and (min-width : 768px) {
+    .head {
+        padding-bottom: 10px;
     }
 
     .game-board {
         font-size: 14px;
-        line-height: 35px;
+        line-height: 30px;
         font-weight: normal;
-        width: 50vw;
         padding: 0px 10px 0px 10px;
     }
 
-    .score-card {
-        width: 25%;
-        font-weight: normal;
-        line-height: 50px;
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .game-board span {
+        font-size: 30px;
     }
 
     .grid-box,
     .x-player,
     .o-player {
-        font-size: 20px;
-        padding: 15px 25px;
-        min-width: 80px;
-        min-height: 80px;
         margin: 0px;
-        background-color: #FCFCFC;
+        background-color: #8d8d8d;
         outline: none;
+        font-size: 25px;
+        padding: 15px 25px;
+        min-width: 70px;
+        min-height: 70px;
         font-family: "Press Start 2P";
-    }
-
-    .score-card span {
-        font-weight: bold;
-        font-size: 24px;
     }
 
     .x-player {
@@ -220,24 +199,76 @@ a {
         background-color: rgb(103, 224, 103);
     }
 
+    .game-area {
+        margin: 20px 0px 0px 0px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-options {
+        margin: 0px 0px 20px 0px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .game-area .game-options select {
+        font-family: "Press Start 2P";
+        font-size: 14px;
+    }
+
+    .game-area .game-options select option {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .head h1 {
+        font-size: 24px;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        margin-right: 10px;
+        outline: none;
+        font-size: 14px;
+    }
+
     .submit-button {
         border-radius: 50px;
-        margin-top: 20px;
+        margin-top: 5px;
         width: 180px;
-        font-size: 16px;
     }
 
-    .computer input.box {
-        width: 18px;
-    }
-
-    .computer {
-        margin: 10px 0px 20px 0px;
+    .score-card {
+        margin-top: 10px;
+        width: 100%;
+        font-weight: normal;
+        line-height: 30px;
+        font-size: 14px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 14px;
+    }
+
+    .score-card span {
+        font-weight: bold;
+        font-size: 16px;
     }
 
     .score-card input {
@@ -245,19 +276,260 @@ a {
         padding: 10px;
         margin-right: 10px;
         outline: none;
-        font-size: 18px;
+        font-size: 14px;
         border-radius: 50px;
         margin-top: 20px;
         width: 180px;
         font-family: "Press Start 2P";
     }
-    .game-board span {
-        font-size: 20px;
-    }
 
-    .game-area input.submit-button {
-        font-size: 16px;
-        font-family: "Press Start 2P";
+    .computer input.box {
+        width: 20px;
+        height: 20px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .game-board {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: normal;
+        padding: 0px 10px 0px 10px;
+        width: 70%;
+    }
+
+    .game-board span {
+        font-size: 30px;
+    }
+
+    .grid-box,
+    .x-player,
+    .o-player {
+        margin: 0px;
+        background-color: #8d8d8d;
+        outline: none;
+        font-size: 30px;
+        padding: 15px 25px;
+        min-width: 80px;
+        min-height: 80px;
+        font-family: "Press Start 2P";
+    }
+
+    .x-player {
+        color: #fff;
+        background-color: rgb(221, 79, 79);
+    }
+
+    .o-player {
+        color: #333;
+        background-color: rgb(103, 224, 103);
+    }
+
+    .game-area {
+        margin: 20px 0px 0px 0px;
+        height: 100%;
+    }
+
+    .game-options {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .game-area .game-options select {
+        font-family: "Press Start 2P";
+        font-size: 18px;
+    }
+
+    .game-area .game-options select option {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .head h1 {
+        font-size: 24px;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        margin-right: 10px;
+        outline: none;
+        font-size: 20px;
+    }
+
+    .submit-button {
+        border-radius: 50px;
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    .score-card {
+        margin-top: 10px;
+        width: 100%;
+        font-weight: normal;
+        line-height: 50px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score-card span {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .score-card input {
+        border: 1px solid #333;
+        padding: 10px;
+        margin-right: 10px;
+        outline: none;
+        font-size: 20px;
+        border-radius: 50px;
+        margin-top: 20px;
+        width: 280px;
+        font-family: "Press Start 2P";
+    }
+
+    .computer input.box {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .head {
+        padding-bottom: 5px;
+    }
+
+    .game-board {
+        font-size: 12px;
+        line-height: 30px;
+        font-weight: normal;
+        padding: 0px 10px 0px 10px;
+        width: 100%;
+    }
+
+    .game-board span {
+        font-size: 14px;
+    }
+
+    .grid-box,
+    .x-player,
+    .o-player {
+        margin: 0px;
+        background-color: #8d8d8d;
+        outline: none;
+        font-size: 10px;
+        padding: 10px 20px;
+        min-width: 20px;
+        min-height: 20px;
+        font-family: "Press Start 2P";
+    }
+
+    .x-player {
+        color: #fff;
+        background-color: rgb(221, 79, 79);
+    }
+
+    .o-player {
+        color: #333;
+        background-color: rgb(103, 224, 103);
+    }
+
+    .game-area {
+        margin: 20px 0px 0px 0px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-options {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        outline: none;
+        font-size: 12px;
+    }
+
+    .game-area .game-options select {
+        font-family: "Press Start 2P";
+        font-size: 12px;
+    }
+
+    .game-area .game-options select option {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .head h1 {
+        font-size: 18px;
+    }
+
+    .game-options select,
+    .game-options input {
+        border: 1px solid #333;
+        padding: 10px;
+        margin-right: 10px;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .game-area .game-options .computer {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .submit-button {
+        border-radius: 50px;
+        width: 180px;
+    }
+
+    .score-card {
+        margin: 10px 0px 0px 0px;
+        width: 100%;
+        font-weight: normal;
+        line-height: 30px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score-card span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .score-card input {
+        border: 1px solid #333;
+        padding: 10px;
+        outline: none;
+        font-size: 14px;
+        border-radius: 50px;
+        margin-top: 10px;
+        width: 180px;
+        font-family: "Press Start 2P";
+    }
+
+    .computer input.box {
+        width: 40px;
+        height: 40px;
+    }
+}
